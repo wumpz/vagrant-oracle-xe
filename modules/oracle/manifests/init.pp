@@ -84,7 +84,7 @@ class oracle::xe {
       user => root,
       creates => "/tmp/oracle-xe-11.2.0-1.0.x86_64.rpm";
     "alien xe":
-      command => "/usr/bin/alien --to-deb --scripts /tmp/oracle-xe-11.2.0-1.0.x86_64.rpm",
+      command => "/usr/bin/alien --to-deb --scripts /tmp/Disk1/oracle-xe-11.2.0-1.0.x86_64.rpm",
       cwd => "/tmp",
       require => Exec["unzip xe"],
       creates => "/tmp/oracle-xe_11.2.0-2_amd64.deb",
